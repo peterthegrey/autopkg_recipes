@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Seashore disk image.
+This recipe gets the version stored at the new repo on Github, not the SourceForge one.</string>
+    <key>Identifier</key>
+    <string>homemade.download.Seashore-Github</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Seashore</string>
+        <key>PRERELEASE</key>
+        <string></string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0.4</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>GitHubReleasesInfoProvider</string>
+            <key>Arguments</key>
+            <dict>
+                <key>github_repo</key>
+                <string>robaho/Seashore</string>
+                <key>include_prereleases</key>
+                <string>%PRERELEASE%</string>
+                <key>sort_by_highest_tag_names</key>
+                <string>True</string>
+                <key>asset_regex</key>
+                <string>seashore-bin-[0-9\.]+.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
