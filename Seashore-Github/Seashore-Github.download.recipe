@@ -24,7 +24,7 @@ This recipe gets the version stored at the new repo on Github, not the SourceFor
             <key>Arguments</key>
             <dict>
                 <key>github_repo</key>
-                <string>peterthegrey/Seashore-Github</string>
+                <string>robaho/Seashore</string>
                 <key>include_prereleases</key>
                 <string>%PRERELEASE%</string>
                 <key>sort_by_highest_tag_names</key>
