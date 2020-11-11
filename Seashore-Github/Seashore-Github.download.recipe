@@ -6,7 +6,7 @@
     <string>Downloads the latest Seashore disk image.
 This recipe gets the version stored at the new repo on Github, not the SourceForge one.</string>
     <key>Identifier</key>
-    <string>homemade.download.Seashore-Github</string>
+    <string>com.github.peterthegrey.download.Seashore-Github</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -24,7 +24,7 @@ This recipe gets the version stored at the new repo on Github, not the SourceFor
             <key>Arguments</key>
             <dict>
                 <key>github_repo</key>
-                <string>robaho/Seashore</string>
+                <string>peterthegrey/Seashore-Github</string>
                 <key>include_prereleases</key>
                 <string>%PRERELEASE%</string>
                 <key>sort_by_highest_tag_names</key>
