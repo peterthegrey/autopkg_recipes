@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Merging ideas from homebysix's GithubDesktop and wardsparadox's DetectX Swift recipes, all this just to make sure teh app is placed in the Development Subdirectory.</string>
+	<string>Merging ideas from homebysix's GitHubDesktop and wardsparadox's DetectX Swift recipes, all this just to make sure teh app is placed in the Development Subdirectory.</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Github Desktop.</string>
+	<string>Downloads the latest version of GitHub Desktop.</string>
 	<key>Identifier</key>
-	<string>com.github.peterthegrey.download.GithubDesktop-Development</string>
+	<string>com.github.peterthegrey.download.GitHubDesktop-Development</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
