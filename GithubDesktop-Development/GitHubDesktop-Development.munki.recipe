@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/GitHub</string>
+		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>GitHub Desktop</string>
 		<key>DESTINATION_PATH</key>
@@ -34,7 +34,7 @@
 			    <key>destination_path</key>
 			    <string>%DESTINATION_PATH%</string>
 			    <key>source_item</key>
-			    <string>DetectX Swift.app</string>
+			    <string>GitHub Desktop.app</string>
 		    </dict>
 	    </array>
 			<key>postinstall_script</key>
@@ -72,7 +72,7 @@ exit 0
 	<string>com.github.peterthegrey.download.GitHubDesktop-Development</string>
 	<key>Process</key>
 	<array>
-		<dict>
+		
 		      <dict>
         <key>Arguments</key>
         <dict>
@@ -86,6 +86,7 @@ exit 0
         <key>Processor</key>
         <string>MunkiInstallsItemsCreator</string>
       </dict>
+      <dict>
 			<key>Arguments</key>
 			<dict>
 				<key>dmg_path</key>
@@ -96,6 +97,10 @@ exit 0
 			<key>Processor</key>
 			<string>DmgCreator</string>
 		</dict>
+		      <dict>
+        <key>Processor</key>
+        <string>MunkiPkginfoMerger</string>
+      </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -110,3 +115,4 @@ exit 0
 	</array>
 </dict>
 </plist>
+

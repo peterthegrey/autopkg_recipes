@@ -18,7 +18,7 @@
 		<string>/Applications/Development</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.w</string>
+	<string>1.0.2</string>
 	<key>Process</key>
 	<array>
 		<dict>
